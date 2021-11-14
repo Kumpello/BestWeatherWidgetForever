@@ -10,6 +10,7 @@ import android.widget.RemoteViews;
  */
 public class WeatherGraph extends AppWidgetProvider {
 
+
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
