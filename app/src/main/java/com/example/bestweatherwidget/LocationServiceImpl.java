@@ -6,8 +6,6 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.pm.PackageManager;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
 import android.hardware.SensorManager;
 import android.location.Location;
 import android.os.Looper;
