@@ -19,7 +19,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
-public class LocationServiceImpl implements LocationService{
+public class LocationServiceImpl implements LocationService {
 
     private FusedLocationProviderClient fusedLocationClient;
     private Location userLocation;
@@ -62,12 +62,12 @@ public class LocationServiceImpl implements LocationService{
         };
     }
 
-    public boolean locationCallbackReady(){
+    public boolean locationCallbackReady() {
         return locationCallbackReady;
     }
 
     @SuppressLint("MissingPermission")
-    public void updateLastLocation(){
+    public void updateLastLocation() {
         fusedLocationClient.getLastLocation()
                 .addOnSuccessListener(activity, location -> {
                     if (location != null) {

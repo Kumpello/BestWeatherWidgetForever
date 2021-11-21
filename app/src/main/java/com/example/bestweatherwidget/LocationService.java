@@ -1,5 +1,11 @@
 package com.example.bestweatherwidget;
 
-public interface LocationService {
+import android.location.Location;
 
+public interface LocationService {
+    boolean locationCallbackReady();
+    void updateLastLocation();
+    Location getLocation();
+    void startLocationUpdates();
+    void stopLocationUpdates();
 }
