@@ -6,6 +6,8 @@ import com.example.bestweatherwidget.Utils.WeatherResponse;
 
 import java.io.IOException;
 
+import javax.inject.Inject;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -14,6 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class WeatherServiceClientImpl {
     WeatherService service;
 
+    @Inject
     public WeatherServiceClientImpl() {
         OkHttpClient httpClient = new OkHttpClient();
         Retrofit retrofit = new Retrofit.Builder()

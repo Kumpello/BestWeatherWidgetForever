@@ -19,6 +19,8 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
+import javax.inject.Inject;
+
 public class LocationServiceImpl implements LocationService {
 
     private FusedLocationProviderClient fusedLocationClient;
@@ -27,8 +29,10 @@ public class LocationServiceImpl implements LocationService {
     private SensorManager sensorManager;
     private LocationCallback locationCallback;
     private boolean locationCallbackReady;
+    @Inject
     private Activity activity;
 
+    @Inject
     public LocationServiceImpl(Activity activity) {
         this.activity = activity;
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(activity);

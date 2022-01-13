@@ -5,9 +5,13 @@ import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.widget.RemoteViews;
 
+import dagger.hilt.android.AndroidEntryPoint;
+
 /**
  * Implementation of App Widget functionality.
  */
+
+@AndroidEntryPoint
 public class WeatherGraph extends AppWidgetProvider {
 
 
