@@ -5,6 +5,7 @@ import android.location.Location;
 
 import javax.inject.Inject;
 
+
 public class MainPresenterImpl implements MainPresenter {
 
     @Inject

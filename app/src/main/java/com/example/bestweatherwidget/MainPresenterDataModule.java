@@ -10,7 +10,7 @@ import dagger.Provides;
 import dagger.hilt.InstallIn;
 
 @Module
-@InstallIn(MainPresenterImpl.class)
+@InstallIn(MainPresenter.class)
 abstract public class MainPresenterDataModule {
 
     @Binds

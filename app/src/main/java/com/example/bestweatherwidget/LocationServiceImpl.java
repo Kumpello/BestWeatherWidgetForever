@@ -30,7 +30,7 @@ public class LocationServiceImpl implements LocationService {
     private LocationCallback locationCallback;
     private boolean locationCallbackReady;
     @Inject
-    private Activity activity;
+    Activity activity;
 
     @Inject
     public LocationServiceImpl(Activity activity) {
